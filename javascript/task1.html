@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+   <div id="content">
+      <h2 style="color:rgb(18, 70, 212);">
+         Font Style Changes After Selecting the Dropdown List
+      </h2>
+   </div>
+   <select id="input" class="input" onchange="changingFontStyle (this);">
+      <option value="Times New Roman" elected="selected">
+         Times New Roman
+      </option>
+      <option value="Arial">Arial</option>
+      <option value="fantasy">Fantasy</option>
+      <option value="cursive">cursive</option>
+   </select>
+   <script>
+      var changingFontStyle = function (fontstyle) {
+         document.getElementById("content").style.fontFamily = fontstyle.value;
+      }
+   </script>
+
+
+</body>
+</html>

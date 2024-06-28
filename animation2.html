@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+ #lin{
+    animation-timing-function: linear;
+    background-color: aqua;
+ }
+ #eas{
+    animation-timing-function: ease;
+    background-color: blanchedalmond;
+ }
+ #eas-in{
+ animation-timing-function: ease-in;
+ background-color: chartreuse;
+ }
+ #eas-out{
+    animation-timing-function: ease-out;
+    background-color: rgb(185, 146, 16);
+ }
+ #eas-in-out{
+    animation-timing-function: ease-in-out;
+    background-color: azure;
+ }
+ div{
+    position: relative;
+    height: 100px; 
+    width: 100px;
+    animation-duration: 6s;
+    background-color: blue;
+    animation-fill-mode: forwards;
+    animation-name: mymove;
+  
+    
+ }
+ @keyframes mymove{
+    from{left:100px;}
+    to{left: 600px;}
+ }
+</style>
+</head>
+<body>
+    <div id="lin">linear</div>
+    <div id="eas">eas</div>
+    <div id="eas-in">eas-in</div>
+    <div id="eas-out">eas-out</div>
+    <div id="ease-in-out">ease-in-out</div>
+    
+</body>
+</html>
